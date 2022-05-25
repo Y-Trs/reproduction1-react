@@ -20,7 +20,8 @@ export default Menu
 const StyledLists = styled.ul`
     display: flex;
     justify-content: center;
-    gap: 20px;
-    width: 100px;
+    gap: 10px;
+    width: 150px;
     height: 21px;
+    line-height: 21px;
 `

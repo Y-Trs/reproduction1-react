@@ -11,8 +11,8 @@ export default MenuList
 
 const StyledList = styled.li`
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 10px;
     font-style: normal;
     color: white;
     list-style: none;
