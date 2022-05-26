@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <Logo />
-      <Menu />
+      <Menu lists={['About', 'Service', 'News', 'Contact']}/>
     </StyledHeader>
   )
 }
