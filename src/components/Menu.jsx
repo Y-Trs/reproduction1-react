@@ -2,14 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { MenuList } from './index'
 
-const Menu = () => {
+const Menu = (props) => {
   return (
     <nav>
         <StyledLists>
-            <MenuList title={'About'} />
-            <MenuList title={'Service'} />
-            <MenuList title={'News'} />
-            <MenuList title={'Contact'} />
+            {props.lists.map(list => <MenuList title={list} />)}
         </StyledLists>
     </nav>
   )
