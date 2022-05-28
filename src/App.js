@@ -1,11 +1,12 @@
 import { Reset } from 'styled-reset';
-import { Header } from './components/index.js'
+import { Header, Top } from './components/index.js'
 
 function App() {
   return (
     <div className="App">
       <Reset />
       <Header />
+      <Top />
     </div>
   );
 }
