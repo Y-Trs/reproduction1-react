@@ -1,5 +1,5 @@
 import { Reset } from 'styled-reset';
-import { Header, Top } from './components/index.js'
+import { Header, Top, About, Service } from './components/index.js'
 
 function App() {
   return (
@@ -7,6 +7,8 @@ function App() {
       <Reset />
       <Header />
       <Top />
+      <About />
+      <Service />
     </div>
   );
 }
