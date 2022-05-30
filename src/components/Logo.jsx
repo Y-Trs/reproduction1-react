@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Logo = () => {
   return (
-    <StyledLogo>クリ★スタ</StyledLogo>
+    <StyledLogo>
+      <Link to={'/'}>クリ★スタ</Link>
+    </StyledLogo>
   )
 }
 
@@ -16,4 +19,9 @@ const StyledLogo = styled.h1`
     font-style: normal;
     color: white;
     line-height: 75px;
+
+    a:link {
+      color: white;
+      text-decoration: none;
+    }
 `

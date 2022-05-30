@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const MenuList = (props) => {
   return (
-    <StyledList>{props.title}</StyledList>
+    <StyledList>
+      <Link to={props.title}>{props.title}</Link> 
+    </StyledList>
   )
 }
 
@@ -16,4 +19,12 @@ const StyledList = styled.li`
     font-style: normal;
     color: white;
     list-style: none;
+    
+    a:link {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      color: hotpink;
+    }
 `
