@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components';
 import { Title, UnitInfoWrap } from './index'
 
 const About = () => {
@@ -12,11 +13,15 @@ const About = () => {
     `
     let infoList = [[summary, detail]]
   return (
-    <section>
+    <StyledAbout>
         <Title title='About' />
         <UnitInfoWrap infoList={infoList} />
-    </section>
+    </StyledAbout>
   )
 }
 
 export default About
+
+const StyledAbout = styled.section`
+  padding: 50px 2%;
+`

@@ -17,5 +17,4 @@ const StyledUnitInfroWrap = styled.div`
     justify-content: space-between;
     flex-direction: column;
     gap: 50px;
-    padding: 0 2%;
 `

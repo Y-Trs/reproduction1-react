@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Title, UnitInfoWrap } from './index'
 import img1 from '../img/service-image@2x.jpg'
 import img2 from '../img/service-image02@2x.jpg'
@@ -17,11 +18,15 @@ const Service = () => {
     `
     let infoList = [[summary1, detail1, img1], [summary2, detail2, img2]]
   return (
-    <section>
+    <StyledService>
         <Title title='Service' />
         <UnitInfoWrap  infoList={infoList} />
-    </section>
+    </StyledService>
   )
 }
 
 export default Service
+
+const StyledService = styled.section`
+  padding: 50px 2%;
+`
