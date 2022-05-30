@@ -19,4 +19,9 @@ const StyledLogo = styled.h1`
     font-style: normal;
     color: white;
     line-height: 75px;
+
+    a:link {
+      color: white;
+      text-decoration: none;
+    }
 `

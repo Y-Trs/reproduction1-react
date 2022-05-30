@@ -19,4 +19,12 @@ const StyledList = styled.li`
     font-style: normal;
     color: white;
     list-style: none;
+    
+    a:link {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      color: hotpink;
+    }
 `
