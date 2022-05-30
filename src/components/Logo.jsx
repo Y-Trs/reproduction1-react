@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Logo = () => {
   return (
-    <StyledLogo>クリ★スタ</StyledLogo>
+    <StyledLogo>
+      <Link to={'/'}>クリ★スタ</Link>
+    </StyledLogo>
   )
 }
 
