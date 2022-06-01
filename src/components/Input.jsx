@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Imput = (props) => {
+const Input = (props) => {
   return (
-    <StyledImputWrap>
+    <StyledInputWrap>
         <StyledLabel for={props.name}>{props.label}</StyledLabel>
-        <StyledImput type={props.type} name={props.name} />
-    </StyledImputWrap>
+        <StyledInput type={props.type} name={props.name} />
+    </StyledInputWrap>
   )
 }
 
-export default Imput
+export default Input
 
-const StyledImputWrap = styled.div`
+const StyledInputWrap = styled.div`
     width: 100%;
 `
 
@@ -24,7 +24,7 @@ const StyledLabel = styled.label`
     color: #141414;
 `
 
-const StyledImput = styled.input`
+const StyledInput = styled.input`
     width: 100%;
     height: 30px;
     margin-top: 5px;
