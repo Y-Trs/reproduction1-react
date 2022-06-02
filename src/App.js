@@ -1,5 +1,5 @@
 import { Reset } from 'styled-reset';
-import { Header, Top, About, Service, News, Contact } from './components/index.js'
+import { Header, Top, About, Service, News, Contact, Footer } from './components/index.js'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
           <Route path='news' element={<News />} />
           <Route path='contact' element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
