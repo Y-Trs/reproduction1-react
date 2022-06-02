@@ -1,11 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const MenuList = (props) => {
   return (
     <StyledList>
-      <Link to={props.title}>{props.title}</Link> 
+      <NavLink 
+        to={props.title} 
+        style={({ isActive }) => isActive ? activeStyle : undefined }
+      >
+        {props.title}
+      </NavLink> 
     </StyledList>
   )
 }
@@ -28,3 +33,7 @@ const StyledList = styled.li`
       color: hotpink;
     }
 `
+
+const activeStyle = {
+  color: 'red',
+}
