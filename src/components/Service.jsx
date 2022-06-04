@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Title, UnitInfoWrap } from './index'
-import serviceList from '../service'
+import serviceList from '../info/service'
 
 const Service = () => {
   return (

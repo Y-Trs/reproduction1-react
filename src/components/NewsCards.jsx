@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { NewsCard } from './index'
-import newslists from '../newsIndex'
+import newslists from '../info/newsIndex'
 
 const NewsCards = () => {
   return (

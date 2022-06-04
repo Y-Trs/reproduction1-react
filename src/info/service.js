@@ -1,5 +1,5 @@
-import img1 from './img/service-image@2x.jpg'
-import img2 from './img/service-image02@2x.jpg'
+import img1 from '../img/service-image@2x.jpg'
+import img2 from '../img/service-image02@2x.jpg'
 
 const summary1 = 'リリース時のサポートで\nサービスのブランディングを';
 const detail1 = `
