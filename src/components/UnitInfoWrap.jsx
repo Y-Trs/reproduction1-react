@@ -5,7 +5,21 @@ import { UnitInfo } from './index'
 const UnitInfoWrap = (props) => {
   return (
         <StyledUnitInfroWrap>
-            {props.infoList.map(info => <UnitInfo summary={info[0]} detail={info[1]} img={info[2]} />)}
+            {Object.keys(props.infoList).map(info => {
+              let key = info.toString();
+              let summary = props.infoList[info].summary;
+              let detail = props.infoList[info].detail;
+              let img = props.infoList[info].img;
+
+              return (
+                <UnitInfo 
+                  key={key}
+                  summary={summary} 
+                  detail={detail} 
+                  img={img ? img : undefined} 
+                />
+              )
+            })}
         </ StyledUnitInfroWrap>
   )
 }

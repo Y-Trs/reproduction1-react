@@ -6,7 +6,7 @@ const Menu = (props) => {
   return (
     <nav>
         <StyledLists>
-            {props.lists.map(list => <MenuList title={list} />)}
+            {props.lists.map(list => <MenuList key={list} title={list} />)}
         </StyledLists>
     </nav>
   )
