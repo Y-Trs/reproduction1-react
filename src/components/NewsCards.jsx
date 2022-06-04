@@ -7,7 +7,7 @@ const NewsCards = () => {
   return (
     <StyledNewsCards>
         {Object.keys(newslists).map(news => 
-            <NewsCard img={newslists[news].img} article={newslists[news].article} />
+            <NewsCard key={news.toString()} img={newslists[news].img} article={newslists[news].article} />
         )}
     </StyledNewsCards>
   )
