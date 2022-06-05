@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Logo, Menu } from './index'
+import device from '../breakPoints'
 
 const Header = () => {
   return (
@@ -24,4 +25,8 @@ const StyledHeader = styled.header`
   top: 0;
   left: 0;
   right: 0;
+
+  @media ${device.pc} {
+    padding: 0 8%;
+  }
 `
