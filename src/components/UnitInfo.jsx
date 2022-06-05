@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { UnitDescWrap, Img } from './index'
+import device from '../breakPoints'
 
 const UnitInfo = (props) => {
   return (
@@ -18,4 +19,9 @@ const StyledUnitInfo = styled.div`
     justify-content: start;
     flex-direction: column;
     gap: 40px;
+
+    @media ${device.pc} {
+      flex-direction: row-reverse;
+      gap: 7%;
+    }
 `
