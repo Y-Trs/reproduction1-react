@@ -23,5 +23,6 @@ const StyledService = styled.section`
 
   @media ${device.pc} {
     gap: 72px;
+    padding: 100px 14%;
   }
 `
