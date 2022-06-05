@@ -16,5 +16,4 @@ const StyledTitle = styled.h1`
     font-style: normal;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 32px;
 `

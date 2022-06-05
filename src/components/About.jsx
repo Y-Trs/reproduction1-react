@@ -17,6 +17,10 @@ export default About
 
 const StyledAbout = styled.section`
   padding: 50px 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
 
   @media ${device.pc} {
     padding: 100px 14%;
