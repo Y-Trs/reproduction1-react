@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MenuList } from './index'
+import device from '../breakPoints'
 
 const Menu = (props) => {
   return (
@@ -21,4 +22,9 @@ const StyledLists = styled.ul`
     width: 150px;
     height: 21px;
     line-height: 21px;
+
+    @media ${device.pc} {
+      gap: 55px;
+      width: 367px;
+    }
 `

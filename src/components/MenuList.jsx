@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
+import device from '../breakPoints'
 
 const MenuList = (props) => {
   return (
@@ -31,6 +32,11 @@ const StyledList = styled.li`
     }
     a:hover {
       color: hotpink;
+    }
+
+    @media ${device.pc} {
+      font-weight: 500;
+      font-size: 16px;
     }
 `
 
