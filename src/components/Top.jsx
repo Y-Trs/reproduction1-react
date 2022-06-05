@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import bgImageForMobile from '../img/fv-bgi_sp@2x.jpg'
+import bgImageForMobile from '../img/top/fv-bgi_sp@2x.jpg'
 
 const Top = () => {
   return (
