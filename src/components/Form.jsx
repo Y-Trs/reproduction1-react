@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Input, TextArea, Button } from './index'
+import device from '../breakPoints'
 
 const Form = () => {
   return (
@@ -21,4 +22,9 @@ const StyledForm = styled.form`
     align-items: center;
     flex-direction: column;
     gap: 25px;
+
+    @media ${device.pc} {
+    width: 50%;
+    margin: 0 auto;
+  }
 `
