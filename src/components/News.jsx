@@ -15,4 +15,7 @@ export default News
 
 const StyledNews = styled.section`
   padding: 50px 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 `
