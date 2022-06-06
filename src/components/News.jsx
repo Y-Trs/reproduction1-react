@@ -1,6 +1,7 @@
 import React from 'react'
 import { Title, NewsCards } from './index'
 import styled from 'styled-components'
+import device from '../breakPoints'
 
 const News = () => {
   return (
@@ -18,4 +19,8 @@ const StyledNews = styled.section`
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media ${device.pc} {
+    gap: 72px;
+  }
 `

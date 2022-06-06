@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { NewsCard } from './index'
 import newslists from '../info/newsIndex'
+import device from '../breakPoints'
 
 const NewsCards = () => {
   return (
@@ -21,4 +22,9 @@ const StyledNewsCards = styled.div`
     justify-content: center;
     flex-direction: column;
     gap: 50px;
+
+    @media ${device.pc} {
+      flex-direction: row;
+      gap: 34px;
+    }
 `
