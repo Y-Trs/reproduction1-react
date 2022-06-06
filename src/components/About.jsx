@@ -20,7 +20,7 @@ const StyledAbout = styled.section`
   display: flex;
   flex-direction: column;
   gap: 32px;
-
+  flex: 1;
 
   @media ${device.pc} {
     padding: 100px 14%;

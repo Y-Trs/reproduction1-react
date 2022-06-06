@@ -18,4 +18,5 @@ const StyledContact = styled.section`
   display: flex;
   gap: 70px;
   flex-direction: column;
+  flex: 1;
 `

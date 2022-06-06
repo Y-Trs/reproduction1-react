@@ -19,8 +19,4 @@ const StyledFotter = styled.footer`
     line-height: 60px;
     background-color: #1B1310;
     height: 60px;
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    right: 0;
 `
