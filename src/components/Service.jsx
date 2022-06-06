@@ -20,6 +20,7 @@ const StyledService = styled.section`
   display: flex;
   flex-direction: column;
   gap: 32px;
+  flex: 1;
 
   @media ${device.pc} {
     gap: 72px;

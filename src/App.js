@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={styledApp}>
       <Reset />
       <Header />
       <Routes>
@@ -20,3 +20,9 @@ function App() {
 }
 
 export default App;
+
+const styledApp = {
+  display: 'flex',
+  flexDirection: 'column',
+  minHeight: '100vh',
+}
